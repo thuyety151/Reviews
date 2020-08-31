@@ -1,0 +1,102 @@
+:root {
+    /* dark shades of primary color*/
+  --clr-primary-1: hsl(205, 86%, 17%);
+  /*font*/
+  --ff-primary: "Roboto", sans-serif;
+  --ff-secondary: "Open Sans", sans-serif;
+    /* primary/main color */
+  --clr-primary-5: hsl(205, 78%, 60%);
+  --fixed-width: 620px;
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --clr-white: #fff;
+  --clr-grey-10: hsl(210, 36%, 96%);
+  --spacing: 0.1rem;
+  --clr-black: #222;
+  --radius: 0.25rem;
+}
+
+body{
+  font-family: var(--ff-secondary);
+  background-color: var(--clr-grey-10);
+
+}
+.nav-center h4{
+  font-family: var(--ff-primary);
+  color:var(--clr-primary-5);
+  text-transform: capitalize;
+  margin: 0%;
+}
+h1, h2, h3, h4 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  font-family: var(--ff-primary);
+}
+nav {
+  background: var(--clr-white);
+  height: 3rem;
+  display: grid;
+  align-items: center;
+  box-shadow: var(--dark-shadow);
+}
+.nav-center {
+  width: 90vw;
+  height: 24px;
+  max-width: var(--fixed-width);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-link {
+  display: flex;
+}
+
+ul {
+  list-style-type: none;
+}
+li {
+  text-transform: capitalize;
+  font-weight: 700;
+  color:var(--clr-primary-1);
+  margin-right: 1rem;
+  letter-spacing: var(--spacing);
+}
+
+.container h3 {
+  color: #fff;
+  background: var(--clr-black);
+  padding: 1rem;
+  font-size: 32px;
+  border-radius: var(--radius);
+  margin-bottom: 2.5rem;
+}
+.container {
+  justify-items: center;
+  text-align: center;
+  font-family: var(--ff-secondary);
+  
+}
+main {
+  place-items: center;
+  display: grid;
+  min-height: calc(100vh - 3rem);
+}
+.btn {
+  color: #222;
+  text-transform: uppercase;
+  font-family: var(--ff-secondary);
+  font-size: 16px;
+  background: var(--clr-grey-10);
+  border-radius: var(--radius);
+  padding: 0.75rem 1.25rem;
+  letter-spacing: var(--spacing);
+  border: 2px solid var(--clr-black);
+  font-weight: 700;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+.btn:hover {
+  color: var(--clr-white);
+  background: var(--clr-black);
+}
